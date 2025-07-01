@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kingdoms-reign-site/static/css/main.f2c343af.css",
+    "main.js": "/kingdoms-reign-site/static/js/main.d5668d7d.js",
+    "index.html": "/kingdoms-reign-site/index.html",
+    "main.f2c343af.css.map": "/kingdoms-reign-site/static/css/main.f2c343af.css.map",
+    "main.d5668d7d.js.map": "/kingdoms-reign-site/static/js/main.d5668d7d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f2c343af.css",
+    "static/js/main.d5668d7d.js"
+  ]
+}
