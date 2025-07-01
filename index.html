@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -71,6 +70,31 @@
       width: 100%;
       height: auto;
     }
+
+    input[type="email"] {
+      padding: 10px;
+      width: 260px;
+      border: none;
+      border-radius: 6px;
+      margin-right: 10px;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #ff3333;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    #signup-success {
+      margin-top: 20px;
+      color: #00cc66;
+      font-size: 1.1rem;
+    }
   </style>
 </head>
 <body>
@@ -89,6 +113,17 @@
     <p style="font-size: 1.8rem; margin-top: 20px; color: #ffcc00;">
       🗓️ Expected Release: <strong>Q4 2025</strong>
     </p>
+  </section>
+
+  <!-- ✅ Email Sign-Up Form -->
+  <section class="section">
+    <h2>Early Access Sign-Up</h2>
+    <p>Be the first to know when Kingdoms Reign goes live!</p>
+    <form onsubmit="handleSignUp(event)">
+      <input type="email" id="emailInput" placeholder="Enter your email" required />
+      <button type="submit">Sign Up</button>
+    </form>
+    <div id="signup-success"></div>
   </section>
 
   <!-- ✅ About the Game -->
@@ -115,5 +150,17 @@
     © 2025 Ironspire Games | <a href="mailto:support@ironspiregames.com">Contact Support</a>
   </footer>
 
+  <!-- ✅ Sign-Up Success Script -->
+  <script>
+    function handleSignUp(event) {
+      event.preventDefault();
+      const email = document.getElementById("emailInput").value;
+      document.getElementById("signup-success").textContent =
+        "✅ Thanks for signing up! We'll keep you posted.";
+      document.getElementById("emailInput").value = "";
+    }
+  </script>
+
 </body>
 </html>
+
