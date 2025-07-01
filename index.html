@@ -1,226 +1,148 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kingdoms Reign</title>
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-
+  <link rel="icon" href="favicon-32x32.png" type="image/png">
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #111;
       color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       text-align: center;
+      padding: 40px;
     }
-
-    header {
-      margin-top: 40px;
+    .logo {
+      max-width: 300px;
+      height: auto;
+      margin: 0 auto 20px;
     }
-
     h1 {
       font-size: 2.5rem;
-      margin: 10px 0;
+      margin-bottom: 10px;
     }
-
     .subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
       color: #ccc;
-      font-size: 1.1rem;
     }
-
-    .section {
-      margin-top: 60px;
+    .release {
+      font-size: 1.3rem;
+      color: #ffd700;
+      margin-bottom: 20px;
     }
-
-    .features {
-      margin-top: 20px;
-      list-style: none;
-      padding: 0;
+    .signup {
+      margin: 20px 0;
     }
-
-    .features li {
-      margin: 10px 0;
-      font-size: 1.1rem;
-    }
-
-    footer {
-      margin-top: 60px;
-      padding: 20px;
-      border-top: 1px solid #333;
-      font-size: 0.9rem;
-    }
-
-    a {
-      color: #66b3ff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    img.logo {
-      max-width: 300px;
-      width: 100%;
-      height: auto;
-    }
-
     input[type="email"] {
       padding: 10px;
-      width: 260px;
+      width: 250px;
+      border-radius: 5px;
       border: none;
-      border-radius: 6px;
-      margin-right: 10px;
-      font-size: 1rem;
     }
-
     button {
       padding: 10px 20px;
-      background-color: #ff3333;
+      margin-left: 10px;
+      background-color: #e63946;
       color: white;
       border: none;
-      border-radius: 6px;
-      font-size: 1rem;
+      border-radius: 5px;
       cursor: pointer;
     }
-
-    #signup-success {
-      margin-top: 20px;
-      color: #00cc66;
-      font-size: 1.1rem;
-    }
-
     iframe {
+      margin-top: 20px;
       width: 100%;
       max-width: 560px;
       height: 315px;
       border: none;
-      border-radius: 12px;
     }
-
-    .hero-grid {
+    .section {
+      margin-top: 50px;
+    }
+    .heroes {
       display: flex;
       justify-content: center;
-      gap: 20px;
       flex-wrap: wrap;
-      margin-top: 30px;
+      gap: 20px;
+      margin-top: 20px;
     }
-
-    .hero-card {
-      background-color: #222;
-      border-radius: 12px;
+    .hero {
+      background: #222;
       padding: 15px;
-      width: 180px;
-      box-shadow: 0 0 10px #000;
+      border-radius: 10px;
+      width: 160px;
     }
-
-    .hero-card img {
+    .hero img {
       width: 100%;
-      height: auto;
       border-radius: 8px;
+      margin-bottom: 10px;
     }
-
-    .hero-name {
-      margin-top: 10px;
-      font-size: 1.1rem;
-      font-weight: bold;
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #888;
     }
-
-    .hero-class {
-      color: #aaa;
-      font-size: 0.95rem;
+    a {
+      color: #4dabf7;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
+  <img src="logo.png" alt="Kingdoms Reign Logo" class="logo" />
+  <h1>🌟 Kingdoms Reign</h1>
+  <div class="subtitle">The official MMO from Ironspire Games. Coming soon!</div>
 
-  <header>
-    <a href="/">
-      <img src="logo.png" alt="Kingdoms Reign Logo" class="logo" />
-    </a>
-    <h1>👑 Kingdoms Reign</h1>
-    <div class="subtitle">The official MMO from Ironspire Games. Coming soon!</div>
-  </header>
-
-  <section class="section">
+  <div class="section">
     <h2>Game Release Info</h2>
-    <p style="font-size: 1.8rem; margin-top: 20px; color: #ffcc00;">
-      🗓️ Expected Release: <strong>Q4 2025</strong>
-    </p>
-  </section>
+    <div class="release">🗓️ Expected Release: Q4 2025
+    </div>
+  </div>
 
-  <section class="section">
-    <h2>Early Access Sign-Up</h2>
+  <div class="section signup">
+    <h3>Early Access Sign-Up</h3>
     <p>Be the first to know when Kingdoms Reign goes live!</p>
-    <form onsubmit="handleSignUp(event)">
-      <input type="email" id="emailInput" placeholder="Enter your email" required />
-      <button type="submit">Sign Up</button>
-    </form>
-    <div id="signup-success"></div>
-  </section>
+    <input type="email" placeholder="Enter your email" />
+    <button>Sign Up</button>
+    <p style="color: #00ff99;">✔ Thanks for signing up! We'll keep you posted.</p>
+  </div>
 
-  <section class="section">
-    <h2>🎬 Sneak Peek Trailer</h2>
+  <div class="section">
+    <h3>🎮 Sneak Peek Trailer</h3>
     <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-  </section>
+  </div>
 
-  <section class="section">
-    <h2>🧙 Meet the Heroes</h2>
-    <div class="hero-grid">
-      <div class="hero-card">
+  <div class="section">
+    <h2>🔍 Meet the Heroes</h2>
+    <div class="heroes">
+      <div class="hero">
         <img src="elandra.png" alt="Elandra" />
-        <div class="hero-name">Elandra</div>
-        <div class="hero-class">High Elf Sorceress</div>
+        <strong>Elandra</strong><br />
+        <small>High Elf Sorceress</small>
       </div>
-      <div class="hero-card">
+      <div class="hero">
         <img src="thorne.png" alt="Thorne" />
-        <div class="hero-name">Thorne</div>
-        <div class="hero-class">Mountain Warlord</div>
+        <strong>Thorne</strong><br />
+        <small>Mountain Warlord</small>
       </div>
-      <div class="hero-card">
+      <div class="hero">
         <img src="kara.png" alt="Kara" />
-        <div class="hero-name">Kara</div>
-        <div class="hero-class">Shadowblade Rogue</div>
+        <strong>Kara</strong><br />
+        <small>Shadowblade Rogue</small>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="section">
+  <div class="section">
     <h2>About the Game</h2>
     <p>
       Build your empire, forge alliances, and conquer the realm. Kingdoms Reign combines strategy, war, and survival into one ultimate mobile MMO experience.
     </p>
-  </section>
-
-  <section class="section">
-    <h2>Key Features</h2>
-    <ul class="features">
-      <li>⚔️ Real-time PvP Battles</li>
-      <li>🛡️ Hero Classes & Troop Upgrades</li>
-      <li>🎯 Seasonal Events & Raids</li>
-      <li>🏰 Alliance Control & World Capture</li>
-    </ul>
-  </section>
+  </div>
 
   <footer>
     © 2025 Ironspire Games | <a href="mailto:support@ironspiregames.com">Contact Support</a>
   </footer>
-
-  <script>
-    function handleSignUp(event) {
-      event.preventDefault();
-      const email = document.getElementById("emailInput").value;
-      document.getElementById("signup-success").textContent =
-        "✅ Thanks for signing up! We'll keep you posted.";
-      document.getElementById("emailInput").value = "";
-    }
-  </script>
-
 </body>
 </html>
