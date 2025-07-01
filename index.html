@@ -95,6 +95,53 @@
       color: #00cc66;
       font-size: 1.1rem;
     }
+
+    /* ✅ Trailer */
+    .trailer {
+      margin-top: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+      border: none;
+      border-radius: 12px;
+    }
+
+    /* ✅ Hero Cards */
+    .hero-grid {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .hero-card {
+      background-color: #222;
+      border-radius: 12px;
+      padding: 20px;
+      width: 200px;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .hero-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .hero-name {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .hero-class {
+      color: #aaa;
+      font-size: 1rem;
+    }
   </style>
 </head>
 <body>
@@ -124,6 +171,35 @@
       <button type="submit">Sign Up</button>
     </form>
     <div id="signup-success"></div>
+  </section>
+
+  <!-- ✅ Sneak Peek Trailer -->
+  <section class="section trailer">
+    <h2>🎬 Sneak Peek Trailer</h2>
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    <!-- Replace the YouTube link above with your real trailer link -->
+  </section>
+
+  <!-- ✅ Meet the Heroes -->
+  <section class="section">
+    <h2>🧙 Meet the Heroes</h2>
+    <div class="hero-grid">
+      <div class="hero-card">
+        <img src="https://via.placeholder.com/200x200.png?text=Elandra" alt="Elandra" />
+        <div class="hero-name">Elandra</div>
+        <div class="hero-class">High Elf Sorceress</div>
+      </div>
+      <div class="hero-card">
+        <img src="https://via.placeholder.com/200x200.png?text=Thorne" alt="Thorne" />
+        <div class="hero-name">Thorne</div>
+        <div class="hero-class">Mountain Warlord</div>
+      </div>
+      <div class="hero-card">
+        <img src="https://via.placeholder.com/200x200.png?text=Kara" alt="Kara" />
+        <div class="hero-name">Kara</div>
+        <div class="hero-class">Shadowblade Rogue</div>
+      </div>
+    </div>
   </section>
 
   <!-- ✅ About the Game -->
@@ -163,4 +239,3 @@
 
 </body>
 </html>
-
