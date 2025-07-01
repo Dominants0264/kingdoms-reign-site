@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kingdoms Reign</title>
   <link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAA=" />
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+
   <style>
     body {
       margin: 0;
@@ -14,34 +17,77 @@
       color: #fff;
       text-align: center;
     }
+
     header {
       background-color: #222;
       padding: 20px;
     }
+
     header img {
-      height: 80px;
+      height: 120px;
+      max-width: 100%;
+      display: block;
+      margin: 0 auto 10px auto;
     }
+
     h1 {
       font-size: 3rem;
       margin: 20px 0;
     }
+
     p {
       font-size: 1.2rem;
       margin-bottom: 40px;
     }
+
     section {
       padding: 40px 20px;
     }
+
     footer {
       background-color: #222;
       padding: 10px;
       font-size: 0.9rem;
     }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .logo-glow {
+      animation: pulse 2s infinite;
+      filter: drop-shadow(0 0 6px red);
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.04); }
+      100% { transform: scale(1); }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      header img {
+        height: 80px;
+      }
+
+      section {
+        padding: 20px 10px;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="/kingdoms_reign_app_icon_512.png" alt="Kingdoms Reign Logo" style="height: 100px; margin-bottom: 10px;" />
+    <img src="/kingdoms_reign_app_icon_512.png" alt="Kingdoms Reign MMO Logo by Ironspire Games" class="logo-glow" />
     <h1>👑 Kingdoms Reign</h1>
     <p>The official MMO from Ironspire Games. Coming soon!</p>
   </header>
@@ -53,16 +99,17 @@
 
   <section id="features">
     <h2>Key Features</h2>
-    <ul style="list-style: none; padding: 0;">
+    <ul>
       <li>⚔️ Real-time PvP Battles</li>
-      <li>🏰 Hero Classes & Troop Upgrades</li>
+      <li>🛡️ Hero Classes & Troop Upgrades</li>
       <li>🎯 Seasonal Events & Raids</li>
-      <li>👑 Alliance Control & World Capture</li>
+      <li>🏰 Alliance Control & World Capture</li>
     </ul>
   </section>
 
   <footer>
-    &copy; 2025 Ironspire Games | <a href="mailto:support@ironspiregames.com" style="color: #0af;">Contact Support</a>
+    &copy; 2025 Ironspire Games |
+    <a href="mailto:support@ironspiregames.com" style="color: #0af;">Contact Support</a>
   </footer>
 </body>
 </html>
