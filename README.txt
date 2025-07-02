@@ -1,0 +1,1 @@
+This is a placeholder for the Kingdoms Reign full site backup including legal pages.

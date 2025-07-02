@@ -1,2 +1,1 @@
-# Kingdoms Reign
-Official site for the MMO game Kingdoms Reign by Ironspire Games.
+Kingdoms Reign React site with legal pages, ready to deploy to GitHub Pages or Vercel.
