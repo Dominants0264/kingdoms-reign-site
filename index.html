@@ -97,8 +97,9 @@ html {
   <h2>✉️ Early Access Sign-Up</h2>
   <p>Be the first to know when Kingdoms Reign goes live!</p>
   <form action="https://formspree.io/f/xzzgonda" method="POST">
-    <input type="email" name="email" required class="email-box" placeholder="Enter your email" />
-    <button type="submit" style="padding: 10px 15px; background: red; color: white; border: none; border-radius: 4px;">Sign Up</button>
+  <input type="hidden" name="_redirect" value="https://ironspiregames.com/thank-you.html" />
+  <input type="email" name="email" required class="email-box" placeholder="Enter your email" />
+  <button type="submit" style="padding: 10px 15px; background: red; color: white; border: none; border-radius: 4px;">Sign Up</button>
   </form>
   <p style="color: limegreen;">✓ Thanks for signing up! We'll keep you posted.</p>
 </section>
@@ -169,8 +170,12 @@ html {
 
 <!-- FOOTER -->
 <footer>
+<footer>
     <p>© 2025 Ironspire Games</p>
-    <p><a href="mailto:support@ironspiregames.com" style="color:#aaa;">Contact Support</a> |
+    <p>
+       <a href="mailto:support@ironspiregames.com" style="color:#aaa;">Contact Support</a> |
+       <a href="privacy-policy.html" style="color:#aaa;">Privacy Policy</a> |
+       <a href="terms-of-service.html" style="color:#aaa;">Terms of Service</a> |
        <a href="https://twitter.com/ironspiregames" target="_blank" style="color:#aaa;">Twitter</a> |
        <a href="https://facebook.com/ironspiregames" target="_blank" style="color:#aaa;">Facebook</a>
     </p>
